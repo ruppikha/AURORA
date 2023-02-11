@@ -1,0 +1,17 @@
+import cv2
+import numpy as np
+
+def empty(a):
+    pass
+
+path="/Users/ruppikha/PycharmProjects/OPENCV-AURORA/Resources/lambo.png"
+cv2.namedWindow("TrackBars")
+cv2.resizeWindow("TrackBars",640,240)
+cv2.createTrackbar("Hue Min","TrackBars",0,179,empty)
+cv2.createTrackbar("Hue Max","TrackBars",179,179,empty)
+cv2.createTrackbar("Sat Min","TrackBars",0,255,empty)
+cv2.createTrackbar("Sat Max","TrackBars",255,255,empty)
+cv2.createTrackbar("Val Min","TrackBars",0,255,empty)
+cv2.createTrackbar("Val Max","TrackBars",255,255,empty)
+
+cv2.waitKey(0)
